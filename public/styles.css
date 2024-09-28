@@ -1,0 +1,184 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #FFA500;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+}
+
+nav a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.banner {
+    background-image: url('banner.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.banner h1 {
+    font-size: 50px;
+    color: black;
+    height: 20%;
+}
+
+.banner button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #FFA500;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.banner button:hover {
+    background-color: #ff7f00;
+}
+
+.section {
+    padding: 40px;
+    text-align: center;
+}
+
+.map {
+    height: 500px;
+    background-color: #f2f2f2;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+}
+
+.stats div {
+    background-color: #FFA500;
+    color: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.highlight {
+    background-color: #f2f2f2;
+    padding: 40px;
+    text-align: left;
+}
+
+.highlight img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-item {
+    height: 30%; /* Altura definida como 30% do container pai */
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+.title-container {
+    background-color: #f0f0f0; /* Cor de fundo cinza */
+    padding: 15px; /* Espaçamento interno para separar o texto das bordas */
+    text-align: center; /* Centraliza o texto */
+    border-radius: 5px; /* Bordas levemente arredondadas */
+    margin-bottom: 20px; /* Espaçamento inferior */
+}
+
+
+
+/* Centralização e transição para o efeito hover */
+.stat-box .p-3 {
+    transition: background-color 0.3s ease, color 0.3s ease; /* Efeito suave para transição de cores */
+}
+
+
+/* Mudar a cor de fundo e o texto no hover */
+/* Efeito hover: Altera a cor de fundo da div para laranja */
+.stat-box > .p-3:hover {
+    background-color: #ff9800; /* Tom de laranja ao passar o mouse */
+    color: black; /* Texto preto para contraste */
+    cursor: pointer; /* Cursor de ponteiro para indicar interatividade */
+}
+
+
+
+
+/* Estilização personalizada para elementos de mapa */
+.leaflet-container {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona sombra ao contorno do mapa */
+}
+
+
+#map {
+    height: 100vh; /* Mantém a altura total da tela */
+    width: 100%;   /* Ajusta a largura ao container pai */
+    border: 2px solid #333; /* Borda externa para destacar o mapa */
+}
+
+
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    #map {
+        height: 80vh; /* Ajusta a altura para telas menores */
+    }
+}
+
+
+
+
+/* Estilo dos botões de controle do carrossel */
+.carousel-control-prev, .carousel-control-next {
+    background-color: #FFA500; /* Mesma cor de fundo */
+    border: none; /* Remove bordas */
+    color: white; /* Cor do ícone */
+    padding: 10px 20px; /* Mesma configuração de padding */
+    cursor: pointer; /* Mostra o cursor como pointer */
+    opacity: 1; /* Garante que os botões estejam totalmente visíveis */
+}
+
+
+/* Estilo ao passar o mouse sobre os botões */
+.carousel-control-prev:hover, .carousel-control-next:hover {
+    background-color: #ff7f00; /* Cor de fundo ao passar o mouse */
+}
